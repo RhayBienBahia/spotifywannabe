@@ -1,0 +1,122 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #1DB954;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* Song form container */
+.song-form-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.song-form {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.input-text {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.input-file {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.btn-submit {
+  background-color: #1DB954;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #17a54d;
+}
+
+/* Song list container */
+.song-list-container {
+  padding: 20px;
+}
+
+.song-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Card layout for each song */
+.song-card {
+  background-color: #282828;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.song-details {
+  margin-bottom: 15px;
+}
+
+.song-title {
+  font-size: 18px;
+  color: #fff;
+}
+
+.song-artist {
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.music-controls {
+  margin: 10px 0;
+}
+
+audio {
+  width: 100%;
+  outline: none;
+}
+
+/* Delete button styling */
+.delete-form {
+  margin-top: 10px;
+}
+
+.btn-delete {
+  background-color: #e22134;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background-color: #c91d2c;
+}
