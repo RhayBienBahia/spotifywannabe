@@ -2,7 +2,6 @@ const Music = require('../models/music');
 const path = require('path');
 
 const musicController = {
-    // Display all music
     index: (req, res) => {
         Music.getAll((err, result) => {
             if (err) throw err;
@@ -10,7 +9,6 @@ const musicController = {
         });
     },
 
-    // Add new song
     add: (req, res) => {
         const { title, artist } = req.body;
         const file = req.file;
@@ -25,8 +23,6 @@ const musicController = {
             res.status(400).send("No file uploaded.");
         }
     },
-
-    // Delete song
     delete: (req, res) => {
         const id = req.params.id;
         Music.delete(id, (err) => {
